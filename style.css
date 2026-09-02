@@ -85,22 +85,11 @@ button {
     gap: 12px;
 }
 
-.brand-mark {
-    width: 42px;
-    height: 42px;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    border: 1px solid var(--gold);
-
-    color: var(--gold);
-
-    font-weight: 900;
-    font-size: 13px;
-
-    transform: skew(-8deg);
+.brand-logo {
+    width: 48px;
+    height: 48px;
+    object-fit: contain;
+    display: block;
 }
 
 .brand strong {
