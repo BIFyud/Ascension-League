@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Ascension League — Season I</title>
+    <meta name="description" content="Ascension League — Compétition Rocket League. Only the Best Ascend.">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- =========================
+         NAVIGATION
+    ========================== -->
+
+    <header class="navbar">
+        <a href="#home" class="brand">
+            <div class="brand-mark">AL</div>
+            <div>
+                <strong>ASCENSION</strong>
+                <span>LEAGUE</span>
+            </div>
+        </a>
+
+        <button class="menu-button" id="menuButton">☰</button>
+
+        <nav id="navigation">
+            <a href="#home">Accueil</a>
+            <a href="#teams">Équipes</a>
+            <a href="#bracket">Bracket</a>
+            <a href="#schedule">Calendrier</a>
+            <a href="#hall-of-fame">Hall of Fame</a>
+            <a href="#staff">Staff</a>
+        </nav>
+
+        <a class="nav-button" href="https://discord.com" target="_blank">
+            Discord
+        </a>
+    </header>
+
+
+    <!-- =========================
+         HERO
+    ========================== -->
+
+    <main>
+
+        <section class="hero" id="home">
+
+            <div class="hero-background"></div>
+
+            <div class="hero-content">
+
+                <p class="eyebrow">ROCKET LEAGUE COMMUNITY TOURNAMENT</p>
+
+                <h1>
+                    ASCENSION
+                    <span>LEAGUE</span>
+                </h1>
+
+                <p class="season">SEASON I</p>
+
+                <p class="slogan">
+                    ONLY THE BEST ASCEND.
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="#bracket" class="gold-button">
+                        Voir le bracket
+                    </a>
+
+                    <a href="#teams" class="dark-button">
+                        Voir les équipes
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="scroll-indicator">
+                SCROLL
+                <span>↓</span>
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             NEXT MATCH
+        ========================== -->
+
+        <section class="section next-match-section">
+
+            <div class="section-title">
+                <p>PROCHAIN MATCH</p>
+                <h2>MATCH CENTER</h2>
+            </div>
+
+            <div class="match-card">
+
+                <div class="match-info">
+                    <span>QUARTER FINAL</span>
+                    <strong>BO5</strong>
+                </div>
+
+                <div class="match-teams">
+
+                    <div class="match-team">
+                        <div class="team-logo">V</div>
+                        <h3>VESTIGE</h3>
+                    </div>
+
+                    <div class="versus">
+                        <span>VS</span>
+                        <small>PROCHAIN MATCH</small>
+                    </div>
+
+                    <div class="match-team">
+                        <div class="team-logo">3</div>
+                        <h3>TEAM 3</h3>
+                    </div>
+
+                </div>
+
+                <div class="countdown-box">
+                    <p>LE MATCH COMMENCE DANS</p>
+
+                    <div id="countdown">
+                        <div>
+                            <strong id="days">00</strong>
+                            <span>JOURS</span>
+                        </div>
+
+                        <div>
+                            <strong id="hours">00</strong>
+                            <span>HEURES</span>
+                        </div>
+
+                        <div>
+                            <strong id="minutes">00</strong>
+                            <span>MIN</span>
+                        </div>
+
+                        <div>
+                            <strong id="seconds">00</strong>
+                            <span>SEC</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             ABOUT
+        ========================== -->
+
+        <section class="section about">
+
+            <div class="section-title">
+                <p>THE COMPETITION</p>
+                <h2>L'ASCENSION COMMENCE</h2>
+            </div>
+
+            <div class="about-grid">
+
+                <div class="about-text">
+                    <p>
+                        L'Ascension League est une compétition Rocket League
+                        communautaire pensée autour des créateurs de contenu,
+                        de la compétition et du spectacle.
+                    </p>
+
+                    <p>
+                        Pour cette première saison, huit équipes s'affrontent
+                        dans un bracket à élimination directe. Chaque rencontre
+                        se joue en BO5 jusqu'à la grande finale.
+                    </p>
+
+                    <p>
+                        Une seule équipe atteindra le sommet et inscrira son
+                        nom dans l'histoire de l'Ascension League.
+                    </p>
+                </div>
+
+                <div class="stats-grid">
+
+                    <div class="stat">
+                        <strong>08</strong>
+                        <span>ÉQUIPES</span>
+                    </div>
+
+                    <div class="stat">
+                        <strong>3v3</strong>
+                        <span>FORMAT</span>
+                    </div>
+
+                    <div class="stat">
+                        <strong>BO5</strong>
+                        <span>MATCHS</span>
+                    </div>
+
+                    <div class="stat">
+                        <strong>01</strong>
+                        <span>CHAMPION</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             TEAMS
+        ========================== -->
+
+        <section class="section" id="teams">
+
+            <div class="section-title">
+                <p>SEASON I</p>
+                <h2>LES ÉQUIPES</h2>
+            </div>
+
+            <div class="teams-grid" id="teamsGrid"></div>
+
+        </section>
+
+
+        <!-- =========================
+             BRACKET
+        ========================== -->
+
+        <section class="section bracket-section" id="bracket">
+
+            <div class="section-title">
+                <p>SEASON I</p>
+                <h2>BRACKET</h2>
+                <span>ÉLIMINATION DIRECTE — BO5</span>
+            </div>
+
+            <div class="bracket">
+
+                <!-- QUARTERS -->
+
+                <div class="round">
+
+                    <h3>QUARTER FINALS</h3>
+
+                    <div class="bracket-match">
+                        <div>
+                            <span>VESTIGE</span>
+                            <strong>3</strong>
+                        </div>
+
+                        <div>
+                            <span>TEAM 3</span>
+                            <strong>1</strong>
+                        </div>
+                    </div>
+
+                    <div class="bracket-match">
+                        <div>
+                            <span>ZENTRIX</span>
+                            <strong>3</strong>
+                        </div>
+
+                        <div>
+                            <span>TEAM 4</span>
+                            <strong>2</strong>
+                        </div>
+                    </div>
+
+                    <div class="bracket-match">
+                        <div>
+                            <span>TEAM 5</span>
+                            <strong>3</strong>
+                        </div>
+
+                        <div>
+                            <span>TEAM 6</span>
+                            <strong>0</strong>
+                        </div>
+                    </div>
+
+                    <div class="bracket-match">
+                        <div>
+                            <span>TEAM 7</span>
+                            <strong>2</strong>
+                        </div>
+
+                        <div>
+                            <span>TEAM 8</span>
+                            <strong>3</strong>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <!-- SEMIS -->
+
+                <div class="round">
+
+                    <h3>SEMIFINALS</h3>
+
+                    <div class="bracket-match semi">
+                        <div>
+                            <span>VESTIGE</span>
+                            <strong>3</strong>
+                        </div>
+
+                        <div>
+                            <span>ZENTRIX</span>
+                            <strong>2</strong>
+                        </div>
+                    </div>
+
+                    <div class="bracket-match semi">
+                        <div>
+                            <span>TEAM 5</span>
+                            <strong>1</strong>
+                        </div>
+
+                        <div>
+                            <span>TEAM 8</span>
+                            <strong>3</strong>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <!-- FINAL -->
+
+                <div class="round final-round">
+
+                    <h3>GRAND FINAL</h3>
+
+                    <div class="bracket-match final">
+
+                        <div>
+                            <span>VESTIGE</span>
+                            <strong>3</strong>
+                        </div>
+
+                        <div>
+                            <span>TEAM 8</span>
+                            <strong>1</strong>
+                        </div>
+
+                    </div>
+
+                    <div class="champion-box">
+                        <span>SEASON I CHAMPION</span>
+                        <strong>VESTIGE</strong>
+                        <div class="champion-star">★</div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             MATCH RESULTS
+        ========================== -->
+
+        <section class="section results-section">
+
+            <div class="section-title">
+                <p>RESULTS</p>
+                <h2>DERNIÈRES RENCONTRES</h2>
+            </div>
+
+            <div class="results-list">
+
+                <div class="result">
+                    <div>
+                        <small>GRAND FINAL</small>
+                        <strong>VESTIGE vs TEAM 8</strong>
+                    </div>
+
+                    <b>3 — 1</b>
+
+                    <span class="winner">VESTIGE</span>
+                </div>
+
+                <div class="result">
+                    <div>
+                        <small>SEMIFINAL</small>
+                        <strong>VESTIGE vs ZENTRIX</strong>
+                    </div>
+
+                    <b>3 — 2</b>
+
+                    <span class="winner">VESTIGE</span>
+                </div>
+
+                <div class="result">
+                    <div>
+                        <small>SEMIFINAL</small>
+                        <strong>TEAM 5 vs TEAM 8</strong>
+                    </div>
+
+                    <b>1 — 3</b>
+
+                    <span class="winner">TEAM 8</span>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             SCHEDULE
+        ========================== -->
+
+        <section class="section" id="schedule">
+
+            <div class="section-title">
+                <p>SEASON I</p>
+                <h2>CALENDRIER</h2>
+            </div>
+
+            <div class="schedule">
+
+                <div class="schedule-item">
+                    <div class="date">
+                        <strong>01</strong>
+                        <span>SEPT</span>
+                    </div>
+
+                    <div>
+                        <small>QUARTER FINAL</small>
+                        <h3>VESTIGE VS TEAM 3</h3>
+                    </div>
+
+                    <span class="bo5">BO5</span>
+                </div>
+
+                <div class="schedule-item">
+                    <div class="date">
+                        <strong>01</strong>
+                        <span>SEPT</span>
+                    </div>
+
+                    <div>
+                        <small>QUARTER FINAL</small>
+                        <h3>ZENTRIX VS TEAM 4</h3>
+                    </div>
+
+                    <span class="bo5">BO5</span>
+                </div>
+
+                <div class="schedule-item">
+                    <div class="date">
+                        <strong>02</strong>
+                        <span>SEPT</span>
+                    </div>
+
+                    <div>
+                        <small>QUARTER FINAL</small>
+                        <h3>TEAM 5 VS TEAM 6</h3>
+                    </div>
+
+                    <span class="bo5">BO5</span>
+                </div>
+
+                <div class="schedule-item">
+                    <div class="date">
+                        <strong>02</strong>
+                        <span>SEPT</span>
+                    </div>
+
+                    <div>
+                        <small>QUARTER FINAL</small>
+                        <h3>TEAM 7 VS TEAM 8</h3>
+                    </div>
+
+                    <span class="bo5">BO5</span>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             HALL OF FAME
+        ========================== -->
+
+        <section class="section hall" id="hall-of-fame">
+
+            <div class="section-title">
+                <p>LEGENDS</p>
+                <h2>HALL OF FAME</h2>
+            </div>
+
+            <div class="hall-card">
+
+                <div class="trophy">
+                    <div class="trophy-top">★</div>
+                    <div class="trophy-cup">AL</div>
+                </div>
+
+                <div class="hall-content">
+                    <span>SEASON I</span>
+
+                    <h3>VESTIGE</h3>
+
+                    <p>
+                        Champion de la première saison de l'Ascension League.
+                    </p>
+
+                    <div class="hall-details">
+                        <div>
+                            <span>FORMAT</span>
+                            <strong>3v3 BO5</strong>
+                        </div>
+
+                        <div>
+                            <span>STATUS</span>
+                            <strong>CHAMPION</strong>
+                        </div>
+
+                        <div>
+                            <span>TROPHÉE</span>
+                            <strong>NUMÉRIQUE</strong>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             STAFF
+        ========================== -->
+
+        <section class="section" id="staff">
+
+            <div class="section-title">
+                <p>THE ORGANIZATION</p>
+                <h2>STAFF</h2>
+            </div>
+
+            <div class="staff-grid">
+
+                <div class="staff-card">
+                    <div class="staff-avatar">FO</div>
+                    <span>FOUNDER</span>
+                    <h3>ASCENSION LEAGUE</h3>
+                </div>
+
+                <div class="staff-card">
+                    <div class="staff-avatar">CA</div>
+                    <span>COMMENTATEUR</span>
+                    <h3>À VENIR</h3>
+                </div>
+
+                <div class="staff-card">
+                    <div class="staff-avatar">CM</div>
+                    <span>COMMUNITY MANAGER</span>
+                    <h3>À VENIR</h3>
+                </div>
+
+                <div class="staff-card">
+                    <div class="staff-avatar">MD</div>
+                    <span>MEDIA</span>
+                    <h3>À VENIR</h3>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             CTA
+        ========================== -->
+
+        <section class="cta">
+
+            <p>ASCENSION LEAGUE</p>
+
+            <h2>ONLY THE BEST<br>ASCEND.</h2>
+
+            <div>
+                <a href="https://discord.com" target="_blank" class="gold-button">
+                    Rejoindre le Discord
+                </a>
+
+                <a href="#" class="dark-button">
+                    Start.gg
+                </a>
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
+    <footer>
+
+        <div class="footer-brand">
+            <strong>ASCENSION LEAGUE</strong>
+            <span>ONLY THE BEST ASCEND.</span>
+        </div>
+
+        <div class="footer-links">
+            <a href="#home">Accueil</a>
+            <a href="#teams">Équipes</a>
+            <a href="#bracket">Bracket</a>
+            <a href="#hall-of-fame">Hall of Fame</a>
+            <a href="#staff">Staff</a>
+        </div>
+
+        <p>
+            © 2026 Ascension League. Tous droits réservés.
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
