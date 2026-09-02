@@ -729,22 +729,10 @@ nav a:hover {
     transform: translateY(-7px);
 }
 
-.team-card .mini-logo {
-    width: 65px;
-    height: 65px;
-
-    margin: 0 auto 20px;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    border: 1px solid var(--silver-dark);
-
-    color: var(--silver);
-
-    font-size: 22px;
-    font-weight: 900;
+.team-card .mini-logo img {
+    width: 80%;
+    height: 80%;
+    object-fit: contain;
 }
 
 .team-card h3 {
