@@ -88,8 +88,8 @@ teams.forEach(team => {
         ${team.champion ? '<div class="star">★</div>' : ''}
 
         <div class="mini-logo">
-            ${team.short}
-        </div>
+    <img src="${team.logo}" alt="Logo ${team.name}">
+</div>
 
         <h3>${team.name}</h3>
 
