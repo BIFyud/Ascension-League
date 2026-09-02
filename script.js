@@ -20,7 +20,7 @@ const teams = [
     {
         name: "ZENTRIX",
         logo: "WhatsApp_Image_2026-06-07_at_21.09.21-removebg-preview (1).png",
-        owner: "Owner",
+        owner: "Zaiox_gaming",
         players: ["Joueur 1", "Joueur 2", "Joueur 3"],
         champion: false
     },
