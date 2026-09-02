@@ -28,7 +28,7 @@ const teams = [
     {
         name: "TEAM 3",
         short: "3",
-        owner: "Owner",
+        owner: "À VENIR",
         players: ["Joueur 1", "Joueur 2", "Joueur 3"],
         champion: false
     },
@@ -36,7 +36,7 @@ const teams = [
     {
         name: "TEAM 4",
         short: "4",
-        owner: "Owner",
+        owner: "À VENIR",
         players: ["Joueur 1", "Joueur 2", "Joueur 3"],
         champion: false
     },
@@ -44,7 +44,7 @@ const teams = [
     {
         name: "TEAM 5",
         short: "5",
-        owner: "Owner",
+        owner: "À VENIR",
         players: ["Joueur 1", "Joueur 2", "Joueur 3"],
         champion: false
     },
@@ -52,7 +52,7 @@ const teams = [
     {
         name: "TEAM 6",
         short: "6",
-        owner: "Owner",
+        owner: "À VENIR",
         players: ["Joueur 1", "Joueur 2", "Joueur 3"],
         champion: false
     },
@@ -60,7 +60,7 @@ const teams = [
     {
         name: "TEAM 7",
         short: "7",
-        owner: "Owner",
+        owner: "À VENIR",
         players: ["Joueur 1", "Joueur 2", "Joueur 3"],
         champion: false
     },
@@ -68,7 +68,7 @@ const teams = [
     {
         name: "TEAM 8",
         short: "8",
-        owner: "Owner",
+        owner: "À VENIR",
         players: ["Joueur 1", "Joueur 2", "Joueur 3"],
         champion: false
     }
