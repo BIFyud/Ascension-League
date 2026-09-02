@@ -11,7 +11,7 @@
 const teams = [
     {
         name: "VESTIGE",
-        logo: "vestige.png",
+        logo: "ae70ed55-5aea-4cc6-853d-d1abf48c6edc-removebg-preview.png",
         owner: "Owner",
         players: ["Joueur 1", "Joueur 2", "Joueur 3"],
         champion: true
