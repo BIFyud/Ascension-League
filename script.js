@@ -114,7 +114,7 @@ teams.forEach(team => {
     "2026-09-10T20:00:00+02:00"
 */
 
-const matchDate = new Date("2026-09-10T20:00:00+02:00").getTime();
+const matchDate = new Date("2020-09-10T20:00:00+02:00").getTime();
 
 
 function updateCountdown() {
